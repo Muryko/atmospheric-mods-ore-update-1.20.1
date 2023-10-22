@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "marmore_stairs",
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "oreupdate:olivina"
+    }
+  },
+  "result": {
+    "item": "oreupdate:olivina_stairs",
+    "count": 4
+  }
+}

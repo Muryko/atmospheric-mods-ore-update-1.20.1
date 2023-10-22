@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "olivina_slab",
+  "pattern": [
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "oreupdate:olivina"
+    }
+  },
+  "result": {
+    "item": "oreupdate:olivina_slab",
+    "count": 6
+  }
+}

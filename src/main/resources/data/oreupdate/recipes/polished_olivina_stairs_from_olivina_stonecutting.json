@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "oreupdate:olivina"
+  },
+  "result": "oreupdate:polished_olivina_stairs",
+  "count": 1
+}

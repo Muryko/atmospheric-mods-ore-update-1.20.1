@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "oreupdate:tin_pickaxe",
+    "oreupdate:copper_pickaxe",
+    "oreupdate:bronze_pickaxe"
+  ]
+}

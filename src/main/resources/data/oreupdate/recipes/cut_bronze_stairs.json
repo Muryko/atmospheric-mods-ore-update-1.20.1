@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "cut_bronze_stairs",
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "oreupdate:cut_bronze_block"
+    }
+  },
+  "result": {
+    "item": "oreupdate:cut_bronze_stairs",
+    "count": 4
+  }
+}

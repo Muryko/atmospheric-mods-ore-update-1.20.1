@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": { "model": "oreupdate:block/cut_bronze_block" }
+  }
+}

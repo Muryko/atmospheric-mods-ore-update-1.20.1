@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "oreupdate:block/polished_azurita",
+    "top": "oreupdate:block/polished_azurita",
+    "side": "oreupdate:block/polished_azurita"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "marmore_slab",
+  "pattern": [
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "oreupdate:marmore"
+    }
+  },
+  "result": {
+    "item": "oreupdate:marmore_slab",
+    "count": 6
+  }
+}

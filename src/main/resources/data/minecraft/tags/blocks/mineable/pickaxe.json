@@ -1,0 +1,88 @@
+{
+  "replace": false,
+  "values": [
+    "oreupdate:quartzito",
+    "oreupdate:quartzito_slab",
+    "oreupdate:quartzito_stairs",
+    "oreupdate:quartzito_wall",
+    "oreupdate:polished_quartzito",
+    "oreupdate:polished_quartzito_slab",
+    "oreupdate:polished_quartzito_stairs",
+    "oreupdate:polished_quartzito_wall",
+
+    "oreupdate:marmore",
+    "oreupdate:marmore_slab",
+    "oreupdate:marmore_stairs",
+    "oreupdate:marmore_wall",
+    "oreupdate:polished_marmore",
+    "oreupdate:polished_marmore_slab",
+    "oreupdate:polished_marmore_stairs",
+    "oreupdate:polished_marmore_wall",
+
+    "oreupdate:olivina",
+    "oreupdate:olivina_slab",
+    "oreupdate:olivina_stairs",
+    "oreupdate:olivina_wall",
+    "oreupdate:polished_olivina",
+    "oreupdate:polished_olivina_slab",
+    "oreupdate:polished_olivina_stairs",
+    "oreupdate:polished_olivina_wall",
+
+    "oreupdate:bismita",
+    "oreupdate:bismita_slab",
+    "oreupdate:bismita_stairs",
+    "oreupdate:bismita_wall",
+    "oreupdate:polished_bismita",
+    "oreupdate:polished_bismita_slab",
+    "oreupdate:polished_bismita_stairs",
+    "oreupdate:polished_bismita_wall",
+
+    "oreupdate:azurita",
+    "oreupdate:azurita_slab",
+    "oreupdate:azurita_stairs",
+    "oreupdate:azurita_wall",
+    "oreupdate:polished_azurita",
+    "oreupdate:polished_azurita_slab",
+    "oreupdate:polished_azurita_stairs",
+    "oreupdate:polished_azurita_wall",
+
+    "oreupdate:tin_ore",
+    "oreupdate:raw_tin_block",
+    "oreupdate:tin_block",
+
+    "oreupdate:bronze_block",
+    "oreupdate:cut_bronze_block",
+    "oreupdate:cut_bronze_stairs",
+    "oreupdate:cut_bronze_slab",
+
+    "oreupdate:ruby_block",
+    "oreupdate:budding_ruby",
+    "oreupdate:ruby_cluster",
+    "oreupdate:small_ruby_bud",
+    "oreupdate:medium_ruby_bud",
+    "oreupdate:large_ruby_bud",
+
+    "oreupdate:jade_block",
+    "oreupdate:budding_jade",
+    "oreupdate:jade_cluster",
+    "oreupdate:small_jade_bud",
+    "oreupdate:medium_jade_bud",
+    "oreupdate:large_jade_bud",
+
+    "oreupdate:safira_block",
+    "oreupdate:budding_safira",
+    "oreupdate:safira_cluster",
+    "oreupdate:small_safira_bud",
+    "oreupdate:medium_safira_bud",
+    "oreupdate:large_safira_bud",
+
+    "oreupdate:pirita_block",
+    "oreupdate:budding_pirita",
+    "oreupdate:pirita_cluster",
+    "oreupdate:small_pirita_bud",
+    "oreupdate:medium_pirita_bud",
+    "oreupdate:large_pirita_bud",
+
+    "oreupdate:sulphur_ore"
+  ]
+}

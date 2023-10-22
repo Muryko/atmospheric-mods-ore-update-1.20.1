@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "oreupdate:tin_hoe",
+    "oreupdate:copper_hoe",
+    "oreupdate:bronze_hoe"
+  ]
+}

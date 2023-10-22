@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "polished_azurita_wall",
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "oreupdate:polished_azurita"
+    }
+  },
+  "result": {
+    "item": "oreupdate:polished_azurita_wall",
+    "count": 6
+  }
+}

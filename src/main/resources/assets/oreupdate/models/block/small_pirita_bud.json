@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "oreupdate:block/small_pirita_bud"
+  }
+}

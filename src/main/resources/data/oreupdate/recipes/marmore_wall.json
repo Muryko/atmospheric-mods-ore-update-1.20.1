@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "marmore_wall",
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "oreupdate:marmore"
+    }
+  },
+  "result": {
+    "item": "oreupdate:marmore_wall",
+    "count": 6
+  }
+}

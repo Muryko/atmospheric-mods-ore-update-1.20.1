@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "polished_quartzito_slab",
+  "pattern": [
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "oreupdate:polished_quartzito"
+    }
+  },
+  "result": {
+    "item": "oreupdate:polished_quartzito_slab",
+    "count": 6
+  }
+}

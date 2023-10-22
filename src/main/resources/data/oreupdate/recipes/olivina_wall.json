@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "olivina_wall",
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "oreupdate:olivina"
+    }
+  },
+  "result": {
+    "item": "oreupdate:olivina_wall",
+    "count": 6
+  }
+}

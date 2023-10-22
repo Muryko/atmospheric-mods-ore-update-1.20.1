@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "oreupdate:block/raw_tin_block"
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+	"schemaVersion": 1,
+	"id": "atmospheric-mods-ore-update",
+	"version": "${version}",
+	"name": "Atmospheric Mods Ore Update",
+	"description": "Atmospheric's Mods: Ore Update is a vanilla+ mod that adds new rocks and ores for decoration, for equipment of different qualities and new geodes for future additions in the magic mod.  From sulfur for creating gunpowder, to forges and machinery for smelting ores, this mod should not be missing if you are a miner worth your salt!",
+	"authors": [
+		"Muryko Casaril",
+		"Lusk4skk",
+		"Paulo"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/atmospheric-mods-ore-update/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.atmospheric.oreupdate.OreUpdateMod"
+		],
+
+		"client": [
+			"net.atmospheric.oreupdate.OreUpdateModClient"
+		],
+		"fabric-datagen": [
+			"net.atmospheric.oreupdate.OreUpdateModDataGenerator"
+		]
+	},
+	"mixins": [
+		"atmospheric-mods-ore-update.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.22",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

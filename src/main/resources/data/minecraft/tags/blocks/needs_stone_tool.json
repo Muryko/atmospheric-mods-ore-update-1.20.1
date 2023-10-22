@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "oreupdate:tin_ore",
+    "oreupdate:raw_tin_block",
+    "oreupdate:tin_block"
+  ]
+}

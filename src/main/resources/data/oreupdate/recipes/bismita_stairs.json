@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "bismita_stairs",
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "oreupdate:bismita"
+    }
+  },
+  "result": {
+    "item": "oreupdate:bismita_stairs",
+    "count": 4
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "marmore_block",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "oreupdate:bronze_block"
+    }
+  },
+  "result": {
+    "item": "oreupdate:cut_bronze_block",
+    "count": 4
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "oreupdate:block/azurita",
+    "top": "oreupdate:block/azurita",
+    "side": "oreupdate:block/azurita"
+  }
+}

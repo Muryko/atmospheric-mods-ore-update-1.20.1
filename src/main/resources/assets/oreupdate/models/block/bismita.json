@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "oreupdate:block/bismita_bottom",
+    "east": "oreupdate:block/bismita",
+    "north": "oreupdate:block/bismita",
+    "particle": "oreupdate:block/bismita",
+    "south": "oreupdate:block/bismita",
+    "up": "oreupdate:block/bismita_top",
+    "west": "oreupdate:block/bismita"
+  }
+}

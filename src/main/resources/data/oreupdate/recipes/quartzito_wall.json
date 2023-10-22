@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "quartzito_wall",
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "oreupdate:quartzito"
+    }
+  },
+  "result": {
+    "item": "oreupdate:quartzito_wall",
+    "count": 6
+  }
+}

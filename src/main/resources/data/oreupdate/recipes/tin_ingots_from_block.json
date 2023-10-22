@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "oreupdate:tin_block"
+    }
+  ],
+  "result": {
+    "item": "oreupdate:tin_ingot",
+    "count": 9
+  }
+}

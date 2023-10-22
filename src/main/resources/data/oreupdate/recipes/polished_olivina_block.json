@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "polished_olivina",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "oreupdate:olivina"
+    }
+  },
+  "result": {
+    "item": "oreupdate:polished_olivina",
+    "count": 4
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "item": "minecraft:copper_ingot"
+    },
+    "$": {
+      "item": "oreupdate:tin_ingot"
+    }
+  },
+  "pattern": [
+    "###",
+    "#$#",
+    "###"
+  ],
+  "result": {
+    "item": "oreupdate:bronze_ingot"
+  },
+  "show_notification": true
+}

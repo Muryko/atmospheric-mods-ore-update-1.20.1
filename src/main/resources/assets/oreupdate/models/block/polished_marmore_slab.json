@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "oreupdate:block/polished_marmore",
+    "top": "oreupdate:block/polished_marmore",
+    "side": "oreupdate:block/polished_marmore"
+  }
+}

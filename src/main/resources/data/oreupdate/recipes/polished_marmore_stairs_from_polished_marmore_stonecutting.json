@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "oreupdate:polished_marmore"
+  },
+  "result": "oreupdate:polished_marmore_stairs",
+  "count": 1
+}

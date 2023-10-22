@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "bismita_wall",
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "oreupdate:bismita"
+    }
+  },
+  "result": {
+    "item": "oreupdate:bismita_wall",
+    "count": 6
+  }
+}

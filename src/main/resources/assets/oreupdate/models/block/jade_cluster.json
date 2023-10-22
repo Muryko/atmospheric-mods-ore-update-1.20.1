@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "oreupdate:block/jade_cluster"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "safira_block",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "oreupdate:safira"
+    }
+  },
+  "result": {
+    "item": "oreupdate:safira_block",
+    "count": 1
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "pirita_block",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "oreupdate:pirita"
+    }
+  },
+  "result": {
+    "item": "oreupdate:pirita_block",
+    "count": 1
+  }
+}

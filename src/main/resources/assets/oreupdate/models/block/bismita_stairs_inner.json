@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/inner_stairs",
+  "textures": {
+    "bottom": "oreupdate:block/bismita_bottom",
+    "top": "oreupdate:block/bismita_top",
+    "side": "oreupdate:block/bismita"
+  }
+}

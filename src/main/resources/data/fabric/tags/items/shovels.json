@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "oreupdate:tin_shovel",
+    "oreupdate:copper_shovel",
+    "oreupdate:bronze_shovel"
+  ]
+}

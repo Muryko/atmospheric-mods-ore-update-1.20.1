@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "polished_azurita_slab",
+  "pattern": [
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "oreupdate:polished_azurita"
+    }
+  },
+  "result": {
+    "item": "oreupdate:polished_azurita_slab",
+    "count": 6
+  }
+}

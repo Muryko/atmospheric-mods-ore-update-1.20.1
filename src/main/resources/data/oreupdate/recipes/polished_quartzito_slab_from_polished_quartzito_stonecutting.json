@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "oreupdate:polished_quartzito"
+  },
+  "result": "oreupdate:polished_quartzito_slab",
+  "count": 2
+}

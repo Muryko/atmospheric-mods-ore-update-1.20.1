@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "oreupdate:tin_swords",
+    "oreupdate:copper_swords",
+    "oreupdate:bronze_swords"
+  ]
+}

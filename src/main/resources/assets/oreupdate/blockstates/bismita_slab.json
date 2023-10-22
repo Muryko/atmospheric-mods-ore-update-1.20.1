@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "oreupdate:block/bismita_slab"
+    },
+    "type=double": {
+      "model": "oreupdate:block/bismita"
+    },
+    "type=top": {
+      "model": "oreupdate:block/bismita_slab_top"
+    }
+  }
+}

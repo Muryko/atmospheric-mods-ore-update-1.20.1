@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "oreupdate:block/polished_quartzito_slab"
+    },
+    "type=double": {
+      "model": "oreupdate:block/polished_quartzito"
+    },
+    "type=top": {
+      "model": "oreupdate:block/polished_quartzito_slab_top"
+    }
+  }
+}

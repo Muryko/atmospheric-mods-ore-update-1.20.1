@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "oreupdate:block/azurita",
+    "east": "oreupdate:block/azurita",
+    "north": "oreupdate:block/azurita",
+    "particle": "oreupdate:block/azurita",
+    "south": "oreupdate:block/azurita",
+    "up": "oreupdate:block/azurita",
+    "west": "oreupdate:block/azurita"
+  }
+}

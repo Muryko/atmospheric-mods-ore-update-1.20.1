@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.1,
+  "ingredient": [
+    {
+      "item": "oreupdate:tin_pickaxe"
+    },
+    {
+      "item": "oreupdate:tin_shovel"
+    },
+    {
+      "item": "oreupdate:tin_axe"
+    },
+    {
+      "item": "oreupdate:tin_hoe"
+    },
+    {
+      "item": "oreupdate:tin_sword"
+    },
+    {
+      "item": "oreupdate:tin_helmet"
+    },
+    {
+      "item": "oreupdate:tin_chestplate"
+    },
+    {
+      "item": "oreupdate:tin_leggings"
+    },
+    {
+      "item": "oreupdate:tin_boots"
+    }
+  ],
+  "result": "oreupdate:tin_nugget"
+}

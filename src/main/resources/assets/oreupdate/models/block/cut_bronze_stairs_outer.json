@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "oreupdate:block/cut_bronze_block",
+    "top": "oreupdate:block/cut_bronze_block",
+    "side": "oreupdate:block/cut_bronze_block"
+  }
+}

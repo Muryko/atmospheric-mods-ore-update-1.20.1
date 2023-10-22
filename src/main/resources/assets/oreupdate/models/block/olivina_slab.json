@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "oreupdate:block/olivina",
+    "top": "oreupdate:block/olivina",
+    "side": "oreupdate:block/olivina"
+  }
+}

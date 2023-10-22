@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "oreupdate:block/polished_marmore_slab"
+    },
+    "type=double": {
+      "model": "oreupdate:block/polished_marmore"
+    },
+    "type=top": {
+      "model": "oreupdate:block/polished_marmore_slab_top"
+    }
+  }
+}

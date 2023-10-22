@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "oreupdate:block/azurita_slab"
+    },
+    "type=double": {
+      "model": "oreupdate:block/azurita"
+    },
+    "type=top": {
+      "model": "oreupdate:block/azurita_slab_top"
+    }
+  }
+}

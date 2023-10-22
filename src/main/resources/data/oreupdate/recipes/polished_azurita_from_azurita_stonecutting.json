@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "oreupdate:azurita"
+  },
+  "result": "oreupdate:polished_azurita",
+  "count": 1
+}

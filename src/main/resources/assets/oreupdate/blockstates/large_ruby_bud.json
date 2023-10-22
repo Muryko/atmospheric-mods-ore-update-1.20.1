@@ -1,0 +1,30 @@
+{
+  "variants": {
+    "facing=down": {
+      "model": "oreupdate:block/large_ruby_bud",
+      "x": 180
+    },
+    "facing=east": {
+      "model": "oreupdate:block/large_ruby_bud",
+      "x": 90,
+      "y": 90
+    },
+    "facing=north": {
+      "model": "oreupdate:block/large_ruby_bud",
+      "x": 90
+    },
+    "facing=south": {
+      "model": "oreupdate:block/large_ruby_bud",
+      "x": 90,
+      "y": 180
+    },
+    "facing=up": {
+      "model": "oreupdate:block/large_ruby_bud"
+    },
+    "facing=west": {
+      "model": "oreupdate:block/large_ruby_bud",
+      "x": 90,
+      "y": 270
+    }
+  }
+}

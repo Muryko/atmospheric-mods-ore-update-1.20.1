@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "oreupdate:block/polished_olivina_slab"
+    },
+    "type=double": {
+      "model": "oreupdate:block/polished_olivina"
+    },
+    "type=top": {
+      "model": "oreupdate:block/polished_olivina_slab_top"
+    }
+  }
+}

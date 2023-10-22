@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "polished_marmore",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "oreupdate:marmore"
+    }
+  },
+  "result": {
+    "item": "oreupdate:polished_marmore",
+    "count": 4
+  }
+}

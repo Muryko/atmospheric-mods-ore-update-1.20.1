@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "oreupdate:quartzito_wall",
+    "oreupdate:marmore_wall",
+    "oreupdate:olivina_wall",
+    "oreupdate:bismita_wall",
+    "oreupdate:azurita_wall",
+    "oreupdate:polished_quartzito_wall",
+    "oreupdate:polished_marmore_wall",
+    "oreupdate:polished_olivina_wall",
+    "oreupdate:polished_bismita_wall",
+    "oreupdate:polished_azurita_wall"
+  ]
+}

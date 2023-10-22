@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "oreupdate:cut_bronze_stairs",
+    "oreupdate:cut_bronze_slab",
+    "oreupdate:cut_bronze_block",
+    "oreupdate:bronze_block"
+  ]
+}
