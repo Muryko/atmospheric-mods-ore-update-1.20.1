@@ -124,6 +124,10 @@
   "block.oreupdate.medium_pirita_bud": "Medium Pirita Bud",
   "block.oreupdate.large_pirita_bud": "Large Pirita Bud",
 
+  "block.oreupdate.miner_block": "Miner Block",
+
+  "item.oreupdate.bismuto": "Bismuto",
+
   "block.oreupdate.sulphur_ore": "Sulphur Ore",
 
   "entity.minecraft.villager.miner_villager": "Miner",

@@ -53,6 +53,7 @@ public class ModItems {
     public static final Item JADE = registerItem("jade", new Item(new FabricItemSettings()));
     public static final Item SAFIRA = registerItem("safira", new Item(new FabricItemSettings()));
     public static final Item PIRITA = registerItem("pirita", new Item(new FabricItemSettings()));
+    public static final Item BISMUTO = registerItem("bismuto", new Item(new FabricItemSettings()));
 
     private static void addItemsToIngredientItemGroup(FabricItemGroupEntries entries) {
     }

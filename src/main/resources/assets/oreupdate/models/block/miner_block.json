@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "oreupdate:block/ruby_block",
+    "east": "oreupdate:block/ruby_block",
+    "north": "oreupdate:block/ruby_block",
+    "particle": "oreupdate:block/ruby_block",
+    "south": "oreupdate:block/ruby_block",
+    "up": "oreupdate:block/ruby_block",
+    "west": "oreupdate:block/ruby_block"
+  }
+}

@@ -17,7 +17,7 @@ import net.minecraft.world.poi.PointOfInterestType;
 
 public class ModVillagers {
     public static final RegistryKey<PointOfInterestType> MINER_POI_KEY = poiKey("minerpoi");
-    public static final PointOfInterestType MINER_POI = registerPoi("minerpoi", ModBlocks.RUBY_BLOCK);
+    public static final PointOfInterestType MINER_POI = registerPoi("minerpoi", ModBlocks.MINER_BLOCK);
 
     public static final VillagerProfession MINER_VILLAGER = registerProfession("miner_villager", MINER_POI_KEY);
 

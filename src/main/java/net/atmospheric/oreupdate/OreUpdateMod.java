@@ -1,22 +1,32 @@
 package net.atmospheric.oreupdate;
 
+import com.mojang.datafixers.util.Pair;
 import net.atmospheric.oreupdate.item.ModItems;
 import net.atmospheric.oreupdate.item.ModItemGroups;
 import net.atmospheric.oreupdate.block.ModBlocks;
+import net.atmospheric.oreupdate.mixin.StructurePoolAccessorMixin;
+import net.atmospheric.oreupdate.util.ModCustomTrades;
 import net.atmospheric.oreupdate.villager.ModVillagers;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
 import net.fabricmc.fabric.api.biome.v1.BiomeSelectors;
-import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
-import net.minecraft.client.render.RenderLayer;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
+import net.minecraft.registry.entry.RegistryEntry;
+import net.minecraft.structure.pool.SinglePoolElement;
+import net.minecraft.structure.pool.StructurePool;
+import net.minecraft.structure.pool.StructurePoolElement;
+import net.minecraft.structure.processor.StructureProcessorList;
 import net.minecraft.util.Identifier;
 import net.minecraft.world.biome.BiomeKeys;
 import net.minecraft.world.gen.GenerationStep;
 import net.minecraft.world.gen.feature.PlacedFeature;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.IntStream;
 
 import static net.minecraft.world.biome.BiomeKeys.*;
 
@@ -68,7 +78,23 @@ public class OreUpdateMod implements ModInitializer {
 		BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.NETHER_WASTES, BASALT_DELTAS, CRIMSON_FOREST, WARPED_FOREST, SOUL_SAND_VALLEY), GenerationStep.Feature.UNDERGROUND_ORES, SULPHUR_PLACED_KEY);
 
 		ModVillagers.registerVillagers();
+		ModCustomTrades.registerCustomTrades();
 
+		protected void addToStructurePool(MinecraftServer server, Identifier poolIdentifier, Identifier nbtIdentifier, int weight) {
+			RegistryEntry.Reference<StructureProcessorList> emptyProcessorList = server.getRegistryManager().get(RegistryKeys.PROCESSOR_LIST)
+					.entryOf(RegistryKey.of(RegistryKeys.PROCESSOR_LIST, new Identifier("minecraft", "empty")));
+
+			server.getRegistryManager().get(RegistryKeys.TEMPLATE_POOL).getOrEmpty(poolIdentifier)
+					.ifPresentOrElse(structurePool -> {
+						SinglePoolElement compostPilePool = StructurePoolElement.ofProcessedSingle(nbtIdentifier.toString(), emptyProcessorList)
+								.apply(StructurePool.Projection.RIGID);
+						List<Pair<StructurePoolElement, Integer>> elementCounts = new ArrayList<>(((StructurePoolAccessorMixin) structurePool).getElementCounts());
+						elementCounts.add(Pair.of(compostPilePool, weight));
+						((StructurePoolAccessorMixin) structurePool).setElementCounts(elementCounts);
+
+						IntStream.range(0, weight).forEach(value -> ((StructurePoolAccessorMixin) structurePool).getElements().add(compostPilePool));
+					}, () -> LOGGER.warn("No structure pool found for {}, no compost heaps will be added on it.", poolIdentifier));
+		}
 
 	}
 }

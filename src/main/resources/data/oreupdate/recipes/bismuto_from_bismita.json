@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "oreupdate:bismita"
+  },
+  "result": "oreupdate:bismuto",
+  "experience": 0.7,
+  "cookingtime": 200
+}

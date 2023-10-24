@@ -143,8 +143,12 @@ public class ModItemGroups {
                         entries.add(ModBlocks.MEDIUM_PIRITA_BUD);
                         entries.add(ModBlocks.SMALL_PIRITA_BUD);
 
+                        entries.add(ModItems.BISMUTO);
+
 
                         entries.add(ModBlocks.SULPHUR_ORE);
+
+                        entries.add(ModBlocks.MINER_BLOCK);
 
                     }).build());
 

@@ -236,7 +236,10 @@ public class ModBlocks {
             new Block(FabricBlockSettings.copyOf(Blocks.NETHER_GOLD_ORE).mapColor(MapColor.DARK_RED).
                     requiresTool().strength(3.0f, 3.0f).sounds(BlockSoundGroup.NETHER_GOLD_ORE)));
 
+    //miner villager
 
+    public static final Block MINER_BLOCK = registerBlock("miner_block",
+            new Block(FabricBlockSettings.copyOf(Blocks.ACACIA_WOOD).sounds(BlockSoundGroup.WOOD).strength(2f).requiresTool()));
 
 
 
