@@ -1,4 +1,4 @@
-package net.atmospheric.oreupdate.mixin;
+package net.atmospheric.oreupdate.mixin.accessors;
 
 import com.mojang.datafixers.util.Pair;
 import it.unimi.dsi.fastutil.objects.ObjectArrayList;
