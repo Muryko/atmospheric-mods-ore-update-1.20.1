@@ -1,8 +1,12 @@
 package net.atmospheric.oreupdate;
 
 import net.atmospheric.oreupdate.block.ModBlocks;
+import net.atmospheric.oreupdate.block.entity.ModBlockEntities;
+import net.atmospheric.oreupdate.screen.BronzeAnvilBlockScreen;
+import net.atmospheric.oreupdate.screen.ModScreenHandlers;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
+import net.minecraft.client.gui.screen.ingame.HandledScreens;
 import net.minecraft.client.render.RenderLayer;
 
 public class OreUpdateModClient implements ClientModInitializer {
@@ -28,6 +32,12 @@ public class OreUpdateModClient implements ClientModInitializer {
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.SMALL_PIRITA_BUD, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.MEDIUM_PIRITA_BUD, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.LARGE_PIRITA_BUD, RenderLayer.getCutout());
+
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.BRONZE_ANVIL, RenderLayer.getCutout());
+
+        ModBlockEntities.registerBlockEntities();
+
+        HandledScreens.register(ModScreenHandlers.BRONZE_ANVIL_BLOCK_SCREEN_HANDLER, BronzeAnvilBlockScreen::new);
 
     }
 }

@@ -1,6 +1,7 @@
 package net.atmospheric.oreupdate;
 
 import com.mojang.datafixers.util.Pair;
+import net.atmospheric.oreupdate.block.entity.ModBlockEntities;
 import net.atmospheric.oreupdate.item.ModItems;
 import net.atmospheric.oreupdate.item.ModItemGroups;
 import net.atmospheric.oreupdate.block.ModBlocks;
@@ -88,11 +89,11 @@ public class OreUpdateMod implements ModInitializer {
 	protected void initConfiguration() {
 		{
 			List<Pair<String, Integer>> compostPileList = List.of(
-					Pair.of("plains", 5),
-					Pair.of("savanna", 4),
-					Pair.of("snowy", 3),
-					Pair.of("taiga", 4),
-					Pair.of("desert", 3));
+					Pair.of("plains", 10),
+					Pair.of("savanna", 10),
+					Pair.of("snowy", 10),
+					Pair.of("taiga", 10),
+					Pair.of("desert", 8));
 			ServerLifecycleEvents.SERVER_STARTING.register(server -> compostPileList.forEach(villageType -> {
 				LOGGER.info("Registering compost heaps in village type of {}", villageType.getFirst());
 				Identifier miner_house = new Identifier(OreUpdateMod.mod_id, "village/houses/" + villageType.getFirst() + "_miner_house");

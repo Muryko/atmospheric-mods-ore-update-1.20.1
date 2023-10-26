@@ -158,6 +158,9 @@ public class ModBlocks {
     public static final Block CUT_BRONZE_SLAB = registerBlock("cut_bronze_slab",
             new SlabBlock(FabricBlockSettings.copyOf(Blocks.STONE).sounds(BlockSoundGroup.COPPER).strength(3f).requiresTool()));
 
+    public static final Block BRONZE_ANVIL = registerBlock("bronze_anvil_block",
+            new BronzeAnvilBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).nonOpaque()));
+
     //ruby
     public static final Block RUBY_BLOCK = registerBlock("ruby_block",
             new Block(FabricBlockSettings.copyOf(Blocks.AMETHYST_BLOCK).sounds(BlockSoundGroup.AMETHYST_BLOCK).strength(1.5f).requiresTool()));
@@ -237,7 +240,6 @@ public class ModBlocks {
                     requiresTool().strength(3.0f, 3.0f).sounds(BlockSoundGroup.NETHER_GOLD_ORE)));
 
     //miner villager
-
     public static final Block MINER_BLOCK = registerBlock("miner_block",
             new Block(FabricBlockSettings.copyOf(Blocks.ACACIA_WOOD).sounds(BlockSoundGroup.WOOD).strength(2f).requiresTool()));
 
