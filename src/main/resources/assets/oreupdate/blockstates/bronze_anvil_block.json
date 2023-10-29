@@ -1,5 +1,8 @@
 {
   "variants": {
-    "": { "model": "oreupdate:block/bronze_anvil_block" }
+    "facing=north": { "model": "oreupdate:block/bronze_anvil_block" },
+    "facing=east": { "model": "oreupdate:block/bronze_anvil_block", "y": 90 },
+    "facing=south": { "model": "oreupdate:block/bronze_anvil_block", "y": 180 },
+    "facing=west": { "model": "oreupdate:block/bronze_anvil_block", "y": 270 }
   }
 }

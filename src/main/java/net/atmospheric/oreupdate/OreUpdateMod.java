@@ -1,7 +1,6 @@
 package net.atmospheric.oreupdate;
 
 import com.mojang.datafixers.util.Pair;
-import net.atmospheric.oreupdate.block.entity.ModBlockEntities;
 import net.atmospheric.oreupdate.item.ModItems;
 import net.atmospheric.oreupdate.item.ModItemGroups;
 import net.atmospheric.oreupdate.block.ModBlocks;

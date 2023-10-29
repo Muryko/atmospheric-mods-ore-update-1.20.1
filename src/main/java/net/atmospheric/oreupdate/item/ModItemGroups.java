@@ -52,6 +52,7 @@ public class ModItemGroups {
                         entries.add(ModBlocks.BISMITA_STAIRS);
                         entries.add(ModBlocks.BISMITA_WALL);
                         entries.add(ModBlocks.BISMITA_SLAB);
+                        entries.add(ModItems.BISMUTO);
 
                         entries.add(ModBlocks.POLISHED_BISMITA);
                         entries.add(ModBlocks.POLISHED_BISMITA_STAIRS);
@@ -143,8 +144,6 @@ public class ModItemGroups {
                         entries.add(ModBlocks.LARGE_PIRITA_BUD);
                         entries.add(ModBlocks.MEDIUM_PIRITA_BUD);
                         entries.add(ModBlocks.SMALL_PIRITA_BUD);
-
-                        entries.add(ModItems.BISMUTO);
 
 
                         entries.add(ModBlocks.SULPHUR_ORE);
