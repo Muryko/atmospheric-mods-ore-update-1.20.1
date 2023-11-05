@@ -30,6 +30,6 @@ public class OreUpdateModClient implements ClientModInitializer {
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.MEDIUM_PIRITA_BUD, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.LARGE_PIRITA_BUD, RenderLayer.getCutout());
 
-        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.BRONZE_ANVIL, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.BRONZE_ANVIL_BLOCK, RenderLayer.getCutout());
     }
 }

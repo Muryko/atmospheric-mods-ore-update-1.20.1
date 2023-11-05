@@ -18,7 +18,11 @@ public enum ModToolMaterial implements ToolMaterial {
         return Ingredient.ofItems(Items.COPPER_INGOT);
     }),
 
-    BRONZE(2, 1500, 5.0F, 0.0F, 18, () -> {
+    BRONZE(2, 250, 5.0F, 0.0F, 18, () -> {
+        return Ingredient.ofItems(ModItems.TIN_INGOT);
+    }),
+
+    CUSTOM5(5, 250, 5.0F, 0.0F, 18, () -> {
         return Ingredient.ofItems(ModItems.TIN_INGOT);
     });
 

@@ -158,7 +158,7 @@ public class ModBlocks {
     public static final Block CUT_BRONZE_SLAB = registerBlock("cut_bronze_slab",
             new SlabBlock(FabricBlockSettings.copyOf(Blocks.STONE).sounds(BlockSoundGroup.COPPER).strength(3f).requiresTool()));
 
-    public static final Block BRONZE_ANVIL = registerBlock("bronze_anvil_block",
+    public static final Block BRONZE_ANVIL_BLOCK = registerBlock("bronze_anvil_block",
             new BronzeAnvilBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).nonOpaque()));
 
     //ruby

@@ -1,5 +1,5 @@
 {
-  "replace": false,
+  "replace": true,
   "values": [
     "oreupdate:tin_ore",
     "oreupdate:raw_tin_block",

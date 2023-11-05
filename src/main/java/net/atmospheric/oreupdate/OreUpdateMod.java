@@ -1,9 +1,11 @@
 package net.atmospheric.oreupdate;
 
 import com.mojang.datafixers.util.Pair;
+import net.atmospheric.oreupdate.block.entity.ModBlockEntities;
 import net.atmospheric.oreupdate.item.ModItems;
 import net.atmospheric.oreupdate.item.ModItemGroups;
 import net.atmospheric.oreupdate.block.ModBlocks;
+import net.atmospheric.oreupdate.mixin.CustomToolMaterialsMixin;
 import net.atmospheric.oreupdate.mixin.accessors.StructurePoolAccessorMixin;
 import net.atmospheric.oreupdate.util.ModCustomTrades;
 import net.atmospheric.oreupdate.villager.ModVillagers;
@@ -12,6 +14,8 @@ import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
 import net.fabricmc.fabric.api.biome.v1.BiomeSelectors;
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerLifecycleEvents;
 import net.fabricmc.fabric.api.resource.conditions.v1.ResourceConditions;
+import net.minecraft.item.Items;
+import net.minecraft.item.ToolMaterials;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.entry.RegistryEntry;
@@ -83,7 +87,7 @@ public class OreUpdateMod implements ModInitializer {
 		ModVillagers.registerVillagers();
 		ModCustomTrades.registerCustomTrades();
 		initConfiguration();
-
+		ModBlockEntities.registerBlockEntities();
 		}
 	protected void initConfiguration() {
 		{

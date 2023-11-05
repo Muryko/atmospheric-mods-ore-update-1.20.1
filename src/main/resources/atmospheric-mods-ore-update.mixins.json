@@ -5,7 +5,8 @@
 	"compatibilityLevel": "JAVA_17",
 	"refmap": "${archivesBaseName}-refmap.json",
 	"mixins": [
-		"accessors.StructurePoolAccessorMixin"
+		"accessors.StructurePoolAccessorMixin",
+		"CustomToolMaterialsMixin"
 	],
 	"client": [
 	],

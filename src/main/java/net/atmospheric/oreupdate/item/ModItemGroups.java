@@ -111,7 +111,7 @@ public class ModItemGroups {
                         entries.add(ModItems.BRONZE_AXE);
                         entries.add(ModItems.BRONZE_SHOVEL);
                         entries.add(ModItems.BRONZE_HOE);
-                        entries.add(ModBlocks.BRONZE_ANVIL);
+                        entries.add(ModBlocks.BRONZE_ANVIL_BLOCK);
 
                         entries.add(ModItems.RUBY);
                         entries.add(ModBlocks.RUBY_BLOCK);

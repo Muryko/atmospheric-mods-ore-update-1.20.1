@@ -1,38 +1,42 @@
 package net.atmospheric.oreupdate.block.custom;
 
-import net.minecraft.block.Block;
-import net.minecraft.block.BlockState;
-import net.minecraft.block.ShapeContext;
+import net.atmospheric.oreupdate.block.entity.BronzeAnvilBlockEntity;
+import net.atmospheric.oreupdate.block.entity.ModBlockEntities;
+import net.minecraft.block.*;
+import net.minecraft.block.entity.BlockEntity;
+import net.minecraft.block.entity.BlockEntityTicker;
+import net.minecraft.block.entity.BlockEntityType;
+import net.minecraft.block.entity.FurnaceBlockEntity;
+import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemPlacementContext;
+import net.minecraft.screen.NamedScreenHandlerFactory;
+import net.minecraft.stat.Stats;
 import net.minecraft.state.StateManager;
 import net.minecraft.state.property.DirectionProperty;
 import net.minecraft.state.property.Properties;
-import net.minecraft.util.BlockMirror;
-import net.minecraft.util.BlockRotation;
-import net.minecraft.util.function.BooleanBiFunction;
+import net.minecraft.util.*;
+import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.util.shape.VoxelShapes;
 import net.minecraft.world.BlockView;
+import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
 
-import java.util.stream.Stream;
+public class BronzeAnvilBlock extends BlockWithEntity implements BlockEntityProvider {
 
-public class BronzeAnvilBlock extends Block {
-
-    private static final VoxelShape SHAPE_1_E = Block.createCuboidShape(2.0, 0.0, 3.0, 12.0, 2.0, 10.0);
-    private static final VoxelShape SHAPE_2_E = Block.createCuboidShape(3.0, 2.0, 4.0, 10.0, 1.0, 8.0);
-    private static final VoxelShape SHAPE_3_E = Block.createCuboidShape(4.0, 3.0, 6.0, 8.0, 5.0, 4.0);
-    private static final VoxelShape SHAPE_4_E = Block.createCuboidShape(2.0, 8.0, 3.0, 12.0, 1.0, 10.0);
-    private static final VoxelShape SHAPE_5_E = Block.createCuboidShape(0, 9.0, 2.0, 16.0, 7.0, 12.0);
-    private static final VoxelShape SHAPE_1_N = Block.createCuboidShape(3.0, 0.0, 2.0, 10.0, 2.0, 12.0);
-    private static final VoxelShape SHAPE_2_N = Block.createCuboidShape(4.0, 2.0, 3.0, 8.0, 1.0, 10.0);
-    private static final VoxelShape SHAPE_3_N = Block.createCuboidShape(6.0, 3.0, 4.0, 4.0, 5.0, 8.0);
-    private static final VoxelShape SHAPE_4_N = Block.createCuboidShape(2.0, 8.0, 3.0, 10.0, 1.0, 12.0);
-    private static final VoxelShape SHAPE_5_N = Block.createCuboidShape(2.0, 9.0, 0, 12.0, 7.0, 16.0);
+    private static final VoxelShape SHAPE_1_E = VoxelShapes.cuboid(0.375, 0.1875, 0.25, 0.625, 0.5, 0.75);
+    private static final VoxelShape SHAPE_2_E = VoxelShapes.cuboid(0.125, 0.5625, 0, 0.875, 1, 1);
+    private static final VoxelShape SHAPE_3_E = VoxelShapes.cuboid(0.1875, 0, 0.125, 0.8125, 0.125, 0.875);
+    private static final VoxelShape SHAPE_4_E = VoxelShapes.cuboid(0.1875, 0.5, 0.125, 0.8125, 0.5625, 0.875);
+    private static final VoxelShape SHAPE_5_E = VoxelShapes.cuboid(0.25, 0.125, 0.1875, 0.75, 0.1875, 0.8125);
+    private static final VoxelShape SHAPE_1_N = VoxelShapes.cuboid(0.25, 0.1875, 0.375, 0.75, 0.5, 0.625);
+    private static final VoxelShape SHAPE_2_N = VoxelShapes.cuboid(0, 0.5625, 0.125, 1, 1, 0.875);
+    private static final VoxelShape SHAPE_3_N = VoxelShapes.cuboid(0.125, 0, 0.1875, 0.875, 0.125, 0.8125);
+    private static final VoxelShape SHAPE_4_N = VoxelShapes.cuboid(0.125, 0.5, 0.1875, 0.875, 0.5625, 0.8125);
+    private static final VoxelShape SHAPE_5_N = VoxelShapes.cuboid(0.1875, 0.125, 0.25, 0.8125, 0.1875, 0.75);
     private static final VoxelShape N_AXIS_SHAPE = VoxelShapes.union(SHAPE_1_N, SHAPE_2_N, SHAPE_3_N, SHAPE_4_N, SHAPE_5_N);
     private static final VoxelShape E_AXIS_SHAPE = VoxelShapes.union(SHAPE_1_E, SHAPE_2_E, SHAPE_3_E, SHAPE_4_E, SHAPE_5_E);
-
     public static final DirectionProperty FACING = Properties.HORIZONTAL_FACING;
 
     public BronzeAnvilBlock(Settings settings) {
@@ -58,7 +62,7 @@ public class BronzeAnvilBlock extends Block {
     @Nullable
     @Override
     public BlockState getPlacementState(ItemPlacementContext ctx) {
-        return super.getPlacementState(ctx);
+        return (BlockState)this.getDefaultState().with(FACING, ctx.getHorizontalPlayerFacing());
     }
 
     @Override
@@ -74,5 +78,50 @@ public class BronzeAnvilBlock extends Block {
     @Override
     protected void appendProperties(StateManager.Builder<Block, BlockState> builder) {
         builder.add(FACING);
+    }
+
+    @Nullable
+    @Override
+    public BlockEntity createBlockEntity(BlockPos pos, BlockState state) {
+        return new BronzeAnvilBlockEntity(pos, state);
+    }
+
+    @Override
+    public void onStateReplaced(BlockState state, World world, BlockPos pos, BlockState newState, boolean moved) {
+        if (state.getBlock() != newState.getBlock()) {
+            BlockEntity blockEntity = world.getBlockEntity(pos);
+            if (blockEntity instanceof BronzeAnvilBlockEntity) {
+                ItemScatterer.spawn(world, pos, (BronzeAnvilBlockEntity)blockEntity);
+                world.updateComparators(pos, this);
+            }
+        }
+        super.onStateReplaced(state, world, pos, newState, moved);
+    }
+
+    @Override
+    public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {
+        if (!world.isClient) {
+            NamedScreenHandlerFactory screenHandlerFactory = ((BronzeAnvilBlockEntity) world.getBlockEntity(pos));
+
+            if (screenHandlerFactory != null) {
+                player.openHandledScreen(screenHandlerFactory);
+            }
+        }
+
+        return ActionResult.SUCCESS;
+    }
+
+    @Nullable
+    protected static <E extends BlockEntity, A extends BlockEntity> BlockEntityTicker<A> validateTicker(
+            BlockEntityType<A> givenType, BlockEntityType<E> expectedType, BlockEntityTicker<A> ticker
+    ) {
+        return expectedType == givenType ? ticker : null;
+    }
+
+    @Nullable
+    @Override
+    public <T extends BlockEntity> BlockEntityTicker<T> getTicker(World world, BlockState state, BlockEntityType<T> type) {
+        return validateTicker(type, ModBlockEntities.BRONZE_ANVIL_BLOCK_ENTITY,
+                (world1, pos, state1, blockEntity) -> blockEntity.tick(world1, pos, state1));
     }
 }
